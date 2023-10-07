@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Income Tracker</title>
+      <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+      
+        <h1>Income Tracker</h1>
+        <div class="income-form">
+            <label for="source">Source:</label>
+            <input type="text" id="source" placeholder="Enter source of income">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+            <button id="add-income">Add income</button>
+        </div>
         <table>
-            <tr>
-              <th>Company</th>
-              <th>Contact</th>
-              <th>Country</th>
-            </tr>
-            <tr>
-              <td>Alfreds Futterkiste</td>
-              <td>Maria Anders</td>
-              <td>Germany</td>
-            </tr>
-            <tr>
-              <td>Centro comercial Moctezuma</td>
-              <td>Francisco Chang</td>
-              <td>Mexico</td>
-            </tr>
-          </table>
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Amount ($)</th>
+                </tr>
+            </thead>
+            <tbody id="income-list">
+                <!-- Income items will be added here dynamically -->
+            </tbody>
+        </table>
+
+        <a href="index.html">Back to Index</a>
+      
+
+      <script src="incomeScript.js"></script>
     </body>
 </html>

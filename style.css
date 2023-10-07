@@ -12,6 +12,10 @@ h1 {
     margin: 20px;
 }
 
+.income-form {
+    margin: 30px;
+}
+
 label, input, button {
     display: block;
     margin: 10px 0;
