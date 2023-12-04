@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <div class="expense-form">
+        <label for="product">Product:</label>
+        <input type="text" id="product" placeholder="Enter product">
+        <label for="price">Price:</label>
+        <input type="number" id="price" placeholder="Enter price">
+        <button id="add-expense">Add Expense</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price ($)</th>
+            </tr>
+        </thead>
+        <tbody id="expense-list">
+            <!-- Expense items will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <a href="index.html">Back to Index</a>
+    
+    <script src="expensesScript.js"></script>
+</body>
+</html>
